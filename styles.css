@@ -1,0 +1,152 @@
+/* clear some styles */
+:root {
+  --primary-color: rgb(255, 217, 0);
+  --secondary-color: rgb(117, 15, 201);
+  --white: rgb(209, 209, 209);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: flex;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* new styles */
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  background-color: rgb(36, 36, 36);
+  height: 10vh;
+  box-shadow: -15px 15px 30px #1c1c1c, 15px -15px 30px #262626;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 70vh;
+}
+
+p {
+  font-size: 15px;
+  color: rgb(209, 209, 209);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(209, 209, 209);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  border: 5px solid rgb(54, 54, 54);
+  border-radius: 10px;
+  background-color: rgb(255, 217, 0);
+  color: rgb(54, 54, 54);
+  cursor: pointer;
+}
+
+.playField {
+  display: grid;
+  padding: 15px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgb(255, 217, 0);
+  border-radius: 10px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.cell {
+  color: rgb(209, 209, 209);
+  border: 1px solid rgb(255, 217, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 35%;
+}
+
+.ship {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.shipPlace {
+  display: grid;
+  padding: 15px;
+  width: 1150px;
+  height: 80px;
+  border: 2px solid rgb(255, 217, 0);
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px;
+}
+
+.shipCell {
+  border: 1px solid rgb(117, 15, 201);
+  background-color: rgb(117, 15, 201);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.countShip {
+  margin: 5px;
+}
